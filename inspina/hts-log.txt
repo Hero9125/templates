@@ -1,0 +1,69 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 25 Mar 2019 14:50:36 at http://webapplayers.com/inspinia_admin-v2.9.1/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://webapplayers.com/inspinia_admin-v2.9.1/index.html -O1 "C:\Users\sinng\Desktop\inspina" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:06:15	Error: 	"Not Found" (404) at link mydomain.com/images/image1.png (from webapplayers.com/inspinia_admin-v2.9.1/ecommerce_product.html)
+15:06:15	Error: 	"Not Found" (404) at link mydomain.com/images/image2.png (from webapplayers.com/inspinia_admin-v2.9.1/ecommerce_product.html)
+15:06:15	Error: 	"Not Found" (404) at link mydomain.com/images/image3.png (from webapplayers.com/inspinia_admin-v2.9.1/ecommerce_product.html)
+15:06:15	Error: 	"Not Found" (404) at link mydomain.com/images/image4.png (from webapplayers.com/inspinia_admin-v2.9.1/ecommerce_product.html)
+15:06:16	Error: 	"Not Found" (404) at link mydomain.com/images/image5.png (from webapplayers.com/inspinia_admin-v2.9.1/ecommerce_product.html)
+15:06:16	Error: 	"Not Found" (404) at link mydomain.com/images/image6.png (from webapplayers.com/inspinia_admin-v2.9.1/ecommerce_product.html)
+15:06:16	Error: 	"Not Found" (404) at link mydomain.com/images/image7.png (from webapplayers.com/inspinia_admin-v2.9.1/ecommerce_product.html)
+15:06:51	Error: 	"Not Found" (404) at link https://github.com/mozilla/mozilla/pdf.js (from https://github.com/mozilla/pdf.js)
+15:23:52	Error: 	Exit requested by shell or user
+15:23:53	Warning: 	File not added due to mirror cancel: https://github.com/fertorres10/pdf.js
+15:23:54	Error: 	"Not Found" (404) at link https://github.com/mozilla/pdf.js/branches (from https://github.com/mozilla/pdf.js)
+15:23:56	Warning: 	Link https://github.com/mozilla/pdf.js/commit/9b5a937f78418ad6b114ca66d062cf2ae416d05f not scanned (follow robots meta tag)
+15:23:56	Warning: 	Link https://github.com/mozilla/pdf.js/pull/10668 not scanned (follow robots meta tag)
+15:23:56	Warning: 	Link https://github.com/mozilla/pdf.js/tree/9b5a937f78418ad6b114ca66d062cf2ae416d05f not scanned (follow robots meta tag)
+15:23:57	Warning: 	Link https://github.com/mozilla/pdf.js/commit/40466a85e013885ff170ddfb171f483287e210be not scanned (follow robots meta tag)
+15:23:57	Warning: 	Link https://github.com/mozilla/pdf.js/commit/be3defdd94ae53114da4da318e9f4580e5e11eb8 not scanned (follow robots meta tag)
+15:23:57	Warning: 	Link https://github.com/mozilla/pdf.js/commit/f06b2e4e9fccace5711d51a45b8de033fadec190 not scanned (follow robots meta tag)
+15:23:57	Warning: 	Link https://github.com/mozilla/pdf.js/commit/0f0650f426ac12d931109d3c0fd4b249ddb732c0 not scanned (follow robots meta tag)
+15:23:58	Warning: 	Link https://github.com/mozilla/pdf.js/commit/24a688d6c6155b218a7f8358511c1953ceb8e5de not scanned (follow robots meta tag)
+15:23:59	Warning: 	Link https://github.com/mozilla/pdf.js/commit/ff8e7114f4bdedcf0a3ed5a1aff8fd126db584bf not scanned (follow robots meta tag)
+15:23:59	Warning: 	Link https://github.com/mozilla/pdf.js/commit/33bfbef6ba73014d60b5c071a6f8c4b8852ff8eb not scanned (follow robots meta tag)
+15:23:59	Warning: 	Link https://github.com/mozilla/pdf.js/pull/10635 not scanned (follow robots meta tag)
+15:24:00	Warning: 	Link https://github.com/mozilla/pdf.js/commit/2e044bf646890665767c049c69a4f22bb5c2cc65 not scanned (follow robots meta tag)
+15:24:00	Warning: 	Link https://github.com/mozilla/pdf.js/commit/86472e998168966a0911eed986a34c99c64cd28d not scanned (follow robots meta tag)
+15:24:00	Warning: 	Link https://github.com/mozilla/pdf.js/commit/a71886ffe01568d82714ee3fa09e43af4f78a047 not scanned (follow robots meta tag)
+15:24:00	Warning: 	Link https://github.com/mozilla/pdf.js/commit/a9135f5c35138db811e59cd2a736892440f61292 not scanned (follow robots meta tag)
+15:24:01	Warning: 	Link https://github.com/mozilla/pdf.js/commit/fa85f8629825cc16550db491b1a95194df1f26c8 not scanned (follow robots meta tag)
+15:24:01	Warning: 	Link https://github.com/mozilla/pdf.js/commit/a7f052282152232b2e87e5cd4dc4a0d1db438a0c not scanned (follow robots meta tag)
+15:24:01	Warning: 	Link https://github.com/mozilla/pdf.js/commit/54e984c763c3789856332024ac61c370aa49ce7e not scanned (follow robots meta tag)
+15:24:06	Warning: 	Link https://github.com/mozilla/pdf.js/commit/f7cc33165494b45579c9d8536d3b7c1b1bcfc64c not scanned (follow robots meta tag)
+15:27:09	Warning: 	Link https://github.com/mozilla/pdf.js/commit/b607ef4b65c62d98e8a6f6d2d61277562ee34316 not scanned (follow robots meta tag)
+15:27:09	Warning: 	Link https://github.com/mozilla/pdf.js/commit/77de6ee1f6fecacadd47ee987f49125bb330ac15 not scanned (follow robots meta tag)
+15:27:09	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/mozilla/pdf.js/issues?direction=desc&labels=5-good-beginner-bug&page=1&sort=created&state=open (from https://github.com/mozilla/pdf.js)
+15:27:10	Error: 	"Not Found" (404) at link https://github.com/mozilla/pdf.js/mozilla/pdf.js (from https://github.com/mozilla/pdf.js/watchers)
+15:27:12	Error: 	"Not Found" (404) at link https://github.com/mozilla/pdf.js/network/mozilla/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:20	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/torretoo/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:32	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/Cahya/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:34	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/CJD14/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:35	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/colteiv/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:36	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/cskau/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:38	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/darshilSoni/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:41	Warning: 	Retry after error 502 (Bad Gateway) at link https://github.com/dmmartins/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/mozilla/pdf.js/issues?direction=desc&labels=5-good-beginner-bug&page=1&sort=created&state=open
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/mozilla/pdf.js/issues?direction=desc&labels=5-good-beginner-bug&page=1&sort=created&state=open (from https://github.com/mozilla/pdf.js)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/torretoo/pdf.js
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/torretoo/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/Cahya/pdf.js
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/Cahya/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/CJD14/pdf.js
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/CJD14/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/colteiv/pdf.js
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/colteiv/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/cskau/pdf.js
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/cskau/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/darshilSoni/pdf.js
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/darshilSoni/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+15:27:47	Warning: 	File not added due to mirror cancel: https://github.com/dmmartins/pdf.js
+15:27:47	Error: 	"mirror stopped by user" (-1) at link https://github.com/dmmartins/pdf.js (from https://github.com/mozilla/pdf.js/network/members)
+
+HTTrack Website Copier/3.49-2 mirror complete in 37 minutes 11 seconds : 1170 links scanned, 1141 files written (73660565 bytes overall) [26503669 bytes received at 11879 bytes/sec], 62357891 bytes transferred using HTTP compression in 727 files, ratio 21%, 2.2 requests per connection
+(20 errors, 38 warnings, 0 messages)

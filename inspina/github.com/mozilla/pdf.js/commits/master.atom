@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/mozilla/pdf.js/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/mozilla/pdf.js/commits/master.atom"/>
+  <title>Recent Commits to pdf.js:master</title>
+  <updated>2019-03-22T21:54:41Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9b5a937f78418ad6b114ca66d062cf2ae416d05f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/9b5a937f78418ad6b114ca66d062cf2ae416d05f"/>
+    <title>
+        Merge pull request #10668 from Snuffleupagus/rm-read_with_streaming-test
+    </title>
+    <updated>2019-03-22T21:54:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #10668 from Snuffleupagus/rm-read_with_streaming-test
+
+Remove the Firefox-specific &amp;#39;read with streaming&amp;#39; unit-test&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/234c1d2b2a9dcbc26fa93287c38cceb14e560f25</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/234c1d2b2a9dcbc26fa93287c38cceb14e560f25"/>
+    <title>
+        Remove the Firefox-specific &#39;read with streaming&#39; unit-test
+    </title>
+    <updated>2019-03-22T11:43:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2692120?s=30&amp;v=4"/>
+    <author>
+      <name>Snuffleupagus</name>
+      <uri>https://github.com/Snuffleupagus</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove the Firefox-specific &amp;#39;read with streaming&amp;#39; unit-test
+
+Support for the non-standard `moz-chunked-arraybuffer` response type is in the process of being removed from Firefox; see e.g. https://bugzilla.mozilla.org/show_bug.cgi?id=1411865
+
+For the time being, you probably want to keep support for this in the general PDF.js library given that feature detection is used. However, removing the unit-test immediately seems reasonable, since it will otherwise start failing once the platform support for `moz-chunked-arraybuffer` is gone.
+
+Fixes 8851; please note that if unit-tests for the code in `fetch_stream.js` are wanted, which I&amp;#39;m assuming they are, those should live in their own file rather than being lumped into `network_spec.js` anyway.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bce9ff7347266e18326fff52c201faba04a96bd7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/bce9ff7347266e18326fff52c201faba04a96bd7"/>
+    <title>
+        Merge pull request #10652 from Snuffleupagus/browser-find-events
+    </title>
+    <updated>2019-03-21T21:57:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #10652 from Snuffleupagus/browser-find-events
+
+Prepare the `MOZCENTRAL` viewer for receiving zoom events from the browser UI (bug 786674, bug 1177385)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2e044bf646890665767c049c69a4f22bb5c2cc65</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/2e044bf646890665767c049c69a4f22bb5c2cc65"/>
+    <title>
+        Prepare the `MOZCENTRAL` viewer for receiving zoom events from the br…
+    </title>
+    <updated>2019-03-21T11:42:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2692120?s=30&amp;v=4"/>
+    <author>
+      <name>Snuffleupagus</name>
+      <uri>https://github.com/Snuffleupagus</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Prepare the `MOZCENTRAL` viewer for receiving zoom events from the browser UI (bug 786674, bug 1177385)
+
+This lays the necessary foundation for handling zoom events originating within the browser itself, rather than in the viewer. Please note that this will also require a follow-up patch to `mozilla-central`, such that the viewer is actually notified when zooming occurs.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/844aecf9e3bcec7c8e4fb3f35ebadb562eec8013</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/844aecf9e3bcec7c8e4fb3f35ebadb562eec8013"/>
+    <title>
+        Merge pull request #10657 from ThomasdenH/patch-2
+    </title>
+    <updated>2019-03-20T22:54:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #10657 from ThomasdenH/patch-2
+
+Update test case description&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b24a14738ab5b32f0e274e3a871fc201eded380f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/b24a14738ab5b32f0e274e3a871fc201eded380f"/>
+    <title>
+        Update test case description
+    </title>
+    <updated>2019-03-20T11:52:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/3889750?s=30&amp;v=4"/>
+    <author>
+      <name>ThomasdenH</name>
+      <uri>https://github.com/ThomasdenH</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update test case description&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/33bfbef6ba73014d60b5c071a6f8c4b8852ff8eb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/33bfbef6ba73014d60b5c071a6f8c4b8852ff8eb"/>
+    <title>
+        Merge pull request #10635 from timvandermeij/lexer-parser
+    </title>
+    <updated>2019-03-19T22:17:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #10635 from timvandermeij/lexer-parser
+
+Convert `src/core/parser.js` to ES6 syntax and write more unit tests for the lexer and the parser&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4a4b197b9d2ce1a20690837df64db8fd183c70ac</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/4a4b197b9d2ce1a20690837df64db8fd183c70ac"/>
+    <title>
+        Write more unit tests for the lexer and the parser
+    </title>
+    <updated>2019-03-17T12:36:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Write more unit tests for the lexer and the parser
+
+Moreover, group the lexer unit tests per method. This matches what we
+do for other classes and makes it more easily visible which methods
+we don&amp;#39;t or insufficiently unit test.
+
+The parser itself is not unit tested yet, so this patch provides a start
+for doing so. The `inlineStreamSkipEI` method is used in other end
+marker detection methods, so it&amp;#39;s important that its functionality is
+correct for proper parsing.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2ee299a62b698fc1d5e6a2568526cbac6de4d938</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/2ee299a62b698fc1d5e6a2568526cbac6de4d938"/>
+    <title>
+        Convert `test/unit/parser_spec.js` to ES6 syntax
+    </title>
+    <updated>2019-03-17T12:27:46Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Convert `test/unit/parser_spec.js` to ES6 syntax
+
+Moreover, disable `var` usage for this file.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7d3cb1957127b7fc7220bee02990f85de4a58f4f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/7d3cb1957127b7fc7220bee02990f85de4a58f4f"/>
+    <title>
+        Convert the `Linearization` class in `src/core/parser.js` to ES6 syntax
+    </title>
+    <updated>2019-03-17T12:27:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Convert the `Linearization` class in `src/core/parser.js` to ES6 syntax
+
+Moreover, disable `var` usage for this file.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ee3cfb79863f2ddac69c029ef495cac57f36a937</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/ee3cfb79863f2ddac69c029ef495cac57f36a937"/>
+    <title>
+        Merge pull request #10646 from terurou/svg-fill
+    </title>
+    <updated>2019-03-17T12:13:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #10646 from terurou/svg-fill
+
+Implement linear-gradient, radial-gradient and dummy-pattern in SVGGraphics.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9c70a3831c13f2025f17024618b5e31ddfddcece</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/9c70a3831c13f2025f17024618b5e31ddfddcece"/>
+    <title>
+        Fix to use radicalGradient.
+    </title>
+    <updated>2019-03-17T01:57:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/592887?s=30&amp;v=4"/>
+    <author>
+      <name>terurou</name>
+      <uri>https://github.com/terurou</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix to use radicalGradient.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7c9f1cc518fb19ecf8af0706d4e20bee93caeba2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/7c9f1cc518fb19ecf8af0706d4e20bee93caeba2"/>
+    <title>
+        Merge pull request #10644 from Snuffleupagus/revokeObjectURL
+    </title>
+    <updated>2019-03-16T18:29:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #10644 from Snuffleupagus/revokeObjectURL
+
+Ensure that `blob:` URLs will be revoked when pages are cleaned-up/destroyed (JPEG memory usage)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9f6de3bfbb8894863c145516aad9ab0057a25101</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/9f6de3bfbb8894863c145516aad9ab0057a25101"/>
+    <title>
+        Merge pull request #10647 from Snuffleupagus/ImageMask-cached
+    </title>
+    <updated>2019-03-16T18:20:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1993262?s=30&amp;v=4"/>
+    <author>
+      <name>timvandermeij</name>
+      <uri>https://github.com/timvandermeij</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #10647 from Snuffleupagus/ImageMask-cached
+
+Actually transfer eligible ImageMask data, rather than always copying it&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c970a4b6ae56e389afaae5ffec8b9802273111a6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/c970a4b6ae56e389afaae5ffec8b9802273111a6"/>
+    <title>
+        Fix copy-paste mistake.
+    </title>
+    <updated>2019-03-16T14:21:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/592887?s=30&amp;v=4"/>
+    <author>
+      <name>terurou</name>
+      <uri>https://github.com/terurou</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix copy-paste mistake.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/56eeeea1dca9b9a4ee4a43e74614e91e0a518695</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/56eeeea1dca9b9a4ee4a43e74614e91e0a518695"/>
+    <title>
+        Re-factor the `getTransfers` helper function into a &quot;private&quot; getter …
+    </title>
+    <updated>2019-03-16T12:06:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2692120?s=30&amp;v=4"/>
+    <author>
+      <name>Snuffleupagus</name>
+      <uri>https://github.com/Snuffleupagus</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Re-factor the `getTransfers` helper function into a &amp;quot;private&amp;quot; getter method on the `OperatorList`
+
+This function is currently called with the `OperatorList` instance as its argument, hence I cannot think of any good reason for not just moving it into the `OperatorList` properly. (This will also help with other planned changes regarding the `ImageCache` functionality.)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7273795eb63962912ad45b84b8e05a1074f90335</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/7273795eb63962912ad45b84b8e05a1074f90335"/>
+    <title>
+        Actually transfer eligible ImageMask data, rather than always copying it
+    </title>
+    <updated>2019-03-16T12:06:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2692120?s=30&amp;v=4"/>
+    <author>
+      <name>Snuffleupagus</name>
+      <uri>https://github.com/Snuffleupagus</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Actually transfer eligible ImageMask data, rather than always copying it
+
+By transfering `ArrayBuffer`s you can avoid having two copies of the same data, i.e. one copy on each of the worker/main-thread, for data that&amp;#39;s used only *once* on the worker-thread.
+
+Note how the code in [`PDFImage.createMask`](https://github.com/mozilla/pdf.js/blob/80135378cadd98b55a835446f0857e4bc30524e0/src/core/image.js#L284-L285) goes to great lengths to actually enable tranfering of the image data. However in [`PartialEvaluator.buildPaintImageXObject`](https://github.com/mozilla/pdf.js/blob/80135378cadd98b55a835446f0857e4bc30524e0/src/core/evaluator.js#L336) the `cached` property is always set to `true`, which disqualifies the image data from being transfered; see [`getTransfers`](https://github.com/mozilla/pdf.js/blob/80135378cadd98b55a835446f0857e4bc30524e0/src/core/operator_list.js#L552-L554).
+
+For most ImageMask data this patch won&amp;#39;t matter, since images found in the `/Resources -&amp;gt; /XObject` dictionary will always be indexed by name. However for *inline* images which contains ImageMask data, where only &amp;quot;small&amp;quot; images are cached (in both `parser.js` and `evaluator.js`), the current code will result in some unnecessary memory usage.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fc0f844539accfbbed1a13ad009e0529fa4680e6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/fc0f844539accfbbed1a13ad009e0529fa4680e6"/>
+    <title>
+        Implement linear-gradient, radial-gradient and dummy-pattern in SVGGr…
+    </title>
+    <updated>2019-03-16T04:56:29Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/592887?s=30&amp;v=4"/>
+    <author>
+      <name>terurou</name>
+      <uri>https://github.com/terurou</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Implement linear-gradient, radial-gradient and dummy-pattern in SVGGraphics.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/88d57500302175c83db191d182f5e04e3682c7b9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/88d57500302175c83db191d182f5e04e3682c7b9"/>
+    <title>
+        Remove the `src` attribute from `Image` objects used with natively su…
+    </title>
+    <updated>2019-03-15T14:25:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2692120?s=30&amp;v=4"/>
+    <author>
+      <name>Snuffleupagus</name>
+      <uri>https://github.com/Snuffleupagus</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove the `src` attribute from `Image` objects used with natively supported JPEG images, when pages are cleaned-up/destroyed
+
+This will further help reduce the amount of image data that&amp;#39;s currently being held alive, by explicitly removing the `src` attribute.
+
+Please note that this is mostly relevant for browsers which do not support `URL.createObjectURL`, or where `disableCreateObjectURL` was manually set by the user, since `blob:` URLs will be revoked (see the previous patch).
+However, using `about:memory` (in Firefox) it does seem that this may also be generally helpful, given that calling `URL.revokeObjectURL` won&amp;#39;t invalidate the image data itself (as far as I can tell).&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/983b25f86347c9614706683f65437c494b010f8a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/mozilla/pdf.js/commit/983b25f86347c9614706683f65437c494b010f8a"/>
+    <title>
+        Ensure that `blob:` URLs will be revoked when pages are cleaned-up/de…
+    </title>
+    <updated>2019-03-15T09:40:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2692120?s=30&amp;v=4"/>
+    <author>
+      <name>Snuffleupagus</name>
+      <uri>https://github.com/Snuffleupagus</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Ensure that `blob:` URLs will be revoked when pages are cleaned-up/destroyed
+
+Natively supported JPEG images are sent as-is, using a `blob:` or possibly a `data` URL, to the main-thread for loading/decoding.
+However there&amp;#39;s currently no attempt at releasing these resources, which are held alive by `blob:` URLs, which seems unfortunately given that images can be arbitrarily large.
+
+As mentioned in https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL the lifetime of these URLs are tied to the document, hence they are not being removed when a page is cleaned-up/destroyed (e.g. when being removed from the `PDFPageViewBuffer` in the viewer).
+This is easy to test with the help of `about:memory` (in Firefox), which clearly shows the number of `blob:` URLs becomming arbitrarily large *without* this patch. With this patch however the `blob:` URLs are immediately release upon clean-up as expected, and the memory consumption should thus be considerably reduced for long documents with (simple) JPEG images.&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>
